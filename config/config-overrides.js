@@ -1,10 +1,9 @@
-require('path');
-import {
+const {
   override,
   fixBabelImports,
   addWebpackAlias,
-} from 'customize-cra';
-import path from 'path';
+} = require('customize-cra');
+const path = require('path');
 
 module.exports = override(
   // 按需加载antd
@@ -15,6 +14,8 @@ module.exports = override(
   }),
   // 别名配置
   addWebpackAlias({
-    '@': path.resolve(__dirname, './src'),
+    '@': path.resolve(__dirname, '../src'),
+    '@/api': path.resolve(__dirname, '../src/api'),
+    '@/utils': path.resolve(__dirname, '../src/utils'),
   }),
 );
