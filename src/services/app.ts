@@ -1,7 +1,7 @@
-import request from './request';
+import request from '@/api/request';
 
-const api = {
-  testApi: (params: any) => {
+const app = {
+  testApi: (params?: any) => {
     return request.get('/home/remind', {
       params,
       data: {
@@ -11,4 +11,4 @@ const api = {
   }
 };
 
-export default api;
+export default app;

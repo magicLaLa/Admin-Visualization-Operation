@@ -8,8 +8,7 @@
       "esnext"
     ],
     "typeRoots": [
-      "node_modules/@types",
-      "global.d.ts"
+      "node_modules/@types"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -17,6 +16,7 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -27,6 +27,7 @@
     "rootDir": "."
   },
   "include": [
-    "src"
+    "src",
+    "global.d.ts"
   ]
 }

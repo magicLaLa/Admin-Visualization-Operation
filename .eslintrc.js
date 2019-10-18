@@ -34,6 +34,8 @@ module.exports = {
     'no-with': 2,
     // 要求IIFE使用括号括起来
     'wrap-iife': 2,
+    // 禁止无效的this，只能用在构造器，类，对象字面量
+    "no-invalid-this": 0,
     // 禁止额外的分号
     'no-extra-semi': 2,
     // 行尾必须使用分号结束

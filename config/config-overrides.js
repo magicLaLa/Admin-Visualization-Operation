@@ -14,8 +14,13 @@ module.exports = override(
   }),
   // 别名配置
   addWebpackAlias({
-    '@': path.resolve(__dirname, '../src'),
+    '@/assets': path.resolve(__dirname, '../src/assets'),
     '@/api': path.resolve(__dirname, '../src/api'),
+    '@/services': path.resolve(__dirname, '../src/services'),
+    '@/components': path.resolve(__dirname, '../src/components'),
+    '@/containers': path.resolve(__dirname, '../src/containers'),
+    '@/models': path.resolve(__dirname, '../src/models'),
     '@/utils': path.resolve(__dirname, '../src/utils'),
+    '@': path.resolve(__dirname, '../src'),
   }),
 );
