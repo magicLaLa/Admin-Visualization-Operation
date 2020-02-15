@@ -52,6 +52,6 @@
     "eslint-plugin-react": "^7.16.0",
     "http-proxy-middleware": "^0.20.0",
     "tslint": "^5.20.0",
-    "yarn": "^1.19.1"
+    "yarn": "^1.22.0"
   }
 }
